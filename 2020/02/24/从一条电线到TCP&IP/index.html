@@ -83,19 +83,19 @@ function activateLightMode(){
 <p>​         同步信号           帧头        帧               同步信号        帧头   另外一帧</p>
 <p>通过帧头，计算机可以识别帧011101101010011和0111011010111101011</p>
 <p>但是实际使用中，为了更加安全有效的传输，通常网络传输中的帧会十分复杂，如下：</p>
-<p><a href="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/%E4%BB%A5%E5%A4%AA%E5%B8%A7.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/%E4%BB%A5%E5%A4%AA%E5%B8%A7.jpg" class="lazyload" title></a></p>
+<p><a href="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/%E4%BB%A5%E5%A4%AA%E5%B8%A7.jpg" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/%E4%BB%A5%E5%A4%AA%E5%B8%A7.jpg" class="lazyload"></a></p>
 <h3 id="MAC地址（物理地址）"><a href="#MAC地址（物理地址）" class="headerlink" title="MAC地址（物理地址）"></a>MAC地址（物理地址）</h3><p>通常我们会看到这样的东西：1e : 23 : 64 : 1f : 5a : 4c</p>
 <p>我经常看到也知道这个叫Mac地址，但是不知道它怎么来的</p>
 <p>生产网卡的厂商会给每个网卡赋予独一无二的表示，这个表示就是Mac地址，六个字节表示，每个字节由两个十六进制数组成，如果一台设备有两个网卡，那么这台设备会有两个Mac地址。</p>
-<h3 id><a href="#" class="headerlink" title></a></h3><h3 id="IP协议"><a href="#IP协议" class="headerlink" title="IP协议"></a>IP协议</h3><p><a href="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/IP%E5%8D%8F%E8%AE%AE.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/IP%E5%8D%8F%E8%AE%AE.jpg" class="lazyload" title></a></p>
+<h3 id><a href="#" class="headerlink" title></a></h3><h3 id="IP协议"><a href="#IP协议" class="headerlink" title="IP协议"></a>IP协议</h3><p><a href="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/IP%E5%8D%8F%E8%AE%AE.jpg" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/IP%E5%8D%8F%E8%AE%AE.jpg" class="lazyload"></a></p>
 <p>左右两边电脑的集群就是以太网，简而言之就是局域网，但又不经相同，设备之间的连接有很多技术，以太网（CSMA/CA）只是其中一种技术，另外的还有令牌环网技术、ATM网技术、帧中继技术。通过百花齐放的技术，不同的设备之间实现了连接，构成局域网，而以太网是计算机网络的重要组成，图中也采用了以太网作为局域网。</p>
 <p>以太网直接实现数据传输是非常简单的，大家在填写网络地址信息的时候，通常会涉及子网掩码，子网掩码常见的码型是255.255.255.0，二进制编码是24个1，8个0即11111111.11111111.11111111.11111111.00000000。以太网内设备进行通信时，发送方发送帧时，若接收方IP和发送方IP在子网掩码中值为1的位相同，则说明在同一以太网内。</p>
 <p>经常能见到这样的ip表示方法：192.168.0.1/24，表示主机ip192.168.0.1处在子网掩码长度为24的以太网中，所有IP为192.168.0.XXX的设备均在同一以太网内。</p>
 <h3 id="ARP映射"><a href="#ARP映射" class="headerlink" title="ARP映射"></a>ARP映射</h3><p>ARP全称Address Revolution protocol，中文全称地址解析协议。处理从图中主机A到路由SFO的过程。</p>
-<p><a href="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/%E7%BD%91%E5%85%B3.jpg" data-fancybox="group" data-caption="网关信息" class="fancybox"><img alt="网关信息" data-src="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/%E7%BD%91%E5%85%B3.jpg" class="lazyload" title="网关信息"></a></p>
+<p><a href="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/%E7%BD%91%E5%85%B3.jpg" data-fancybox="group" data-caption="网关信息" class="fancybox"><img alt="网关信息" title="网关信息" data-src="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/%E7%BD%91%E5%85%B3.jpg" class="lazyload"></a></p>
 <p>通常我们不需要填写这个地址，一般插上网线机器就会自动寻址，但是还有有必要了解一下。</p>
 <p>这里的路由器跟家里用的路由器概念不一致，这里的路由器是指远端的，像图中的SFO（旧金山市）一样，只负责大量连接路由，而家用路由器的功能很多，包括线接入点 + PPPoE 客户端 + DHCP 服务器 + DNS 代理服务器 + NAT 网关 + 防火墙 + WebUI，但是性能只能满足一家人的连接，不想网络中的路由，要处理成千上万的连接。</p>
-<p><a href="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/ARP%E5%B8%A7.jpg" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/ARP%E5%B8%A7.jpg" class="lazyload" title></a></p>
+<p><a href="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/ARP%E5%B8%A7.jpg" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/img/%E4%BB%8E%E4%B8%80%E6%A0%B9%E7%94%B5%E7%BA%BF%E5%88%B0TCP&IP/ARP%E5%B8%A7.jpg" class="lazyload"></a></p>
 <p>当以太帧中的Payload（负载）是下面的格式时，这个以太帧就成了ARP请求帧/回答帧</p>
 <p>当A准备传送数据给B，首先出发ARP，联系路由，ARP简单过程如下：</p>
 <p><strong>1）</strong>请求</p>
